@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.akjos.myLibrary.controller.DialogAddBookController">
+   <children>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+            <Label prefHeight="50.0" prefWidth="150.0" text="%dialog.addBook.titleLb">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="title" prefHeight="30.0" prefWidth="200.0">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+            <Label prefHeight="50.0" prefWidth="150.0" text="%dialog.addBook.originalTitleLb">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="orgTitle" prefHeight="30.0" prefWidth="200.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+            <Label prefHeight="50.0" prefWidth="150.0" text="%dialog.addBook.seriesLb">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="series" editable="true" prefWidth="200.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+            <Label prefHeight="50.0" prefWidth="150.0" text="%dialog.addBook.categoryLb">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="category" prefWidth="200.0" />
+            <Button fx:id="addCategory" mnemonicParsing="false" text="+">
+               <font>
+                  <Font name="System Bold Italic" size="32.0" />
+               </font>
+               <padding>
+                  <Insets bottom="-10.0" top="-15.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+            <Label prefHeight="50.0" prefWidth="150.0" text="%dialog.addBook.authorLb">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="author" prefWidth="200.0" />
+            <Button fx:id="addAuthor" mnemonicParsing="false" text="+">
+               <font>
+                  <Font name="System Bold Italic" size="32.0" />
+               </font>
+               <padding>
+                  <Insets bottom="-10.0" top="-15.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" spacing="20.0">
+         <children>
+            <Label prefHeight="50.0" text="%dialog.addBook.onTehShelfLb">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="onTheShelf" mnemonicParsing="false" />
+            <Label prefHeight="50.0" text="%dialog.addBook.favoriteLb">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </Label>
+            <CheckBox fx:id="favorite" mnemonicParsing="false" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+            <Label prefHeight="50.0" prefWidth="100.0" text="%dialog.addBook.ratingLb">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Slider fx:id="rating" blockIncrement="1.0" majorTickUnit="1.0" max="10.0" minorTickCount="1" nodeOrientation="LEFT_TO_RIGHT" showTickLabels="true" showTickMarks="true" snapToTicks="true" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+            <Label prefHeight="50.0" prefWidth="150.0" text="%dialog.addBook.descriptionLb">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="description" prefHeight="100.0" prefWidth="200.0" wrapText="true" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+            <Label prefHeight="50.0" prefWidth="150.0" text="%dialog.addBook.publicationDateLb">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="publicationDate" prefWidth="200.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+            <Label prefHeight="50.0" prefWidth="150.0" text="%dialog.addBook.ISBNLb">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="isbn" prefHeight="30.0" prefWidth="200.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" spacing="100.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <children>
+            <Button fx:id="saveBt" mnemonicParsing="false" text="%dialog.addBook.saveBt">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancelBt" mnemonicParsing="false" text="%dialog.addBook.cancelBt">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

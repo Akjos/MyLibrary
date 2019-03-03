@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<VBox accessibleRole="TEXT" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="-Infinity" prefWidth="600.0" spacing="30.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.akjos.myLibrary.controller.DialogViewBookController">
+   <children>
+      <HBox alignment="CENTER" fillHeight="false">
+         <children>
+            <VBox alignment="CENTER" pickOnBounds="false" prefWidth="300.0">
+               <children>
+                  <Label text="%dialog.viewBook.originalTitleLb">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="orgTitle" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="CENTER" prefWidth="300.0">
+               <children>
+                  <Label text="%dialog.viewBook.titleLb">
+                     <font>
+                        <Font size="22.0" />
+                     </font></Label>
+                  <Label fx:id="title" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="CENTER" prefWidth="300.0">
+               <children>
+                  <Label text="%dialog.viewBook.seriesLb">
+                     <font>
+                        <Font size="22.0" />
+                     </font></Label>
+                  <Label fx:id="series" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" fillHeight="false" prefWidth="300.0" spacing="10.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="%dialog.viewBook.ratingLb">
+                     <font>
+                        <Font size="19.0" />
+                     </font></Label>
+                  <Label fx:id="rating" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="20.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" fillHeight="false" prefWidth="300.0" spacing="10.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="%dialog.viewBook.favoriteLb">
+                     <font>
+                        <Font size="19.0" />
+                     </font></Label>
+                  <Label fx:id="favorite" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="20.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" fillHeight="false" prefWidth="300.0" spacing="10.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="%dialog.viewBook.onTehShelfLb">
+                     <font>
+                        <Font size="19.0" />
+                     </font></Label>
+                  <Label fx:id="onTheShelf" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="20.0" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefWidth="450.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="%dialog.viewBook.categoryLb">
+                     <font>
+                        <Font size="22.0" />
+                     </font></Label>
+                  <Label fx:id="category" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefWidth="450.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="%dialog.viewBook.authorLb">
+                     <font>
+                        <Font size="22.0" />
+                     </font></Label>
+                  <Label fx:id="author" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox alignment="TOP_CENTER" prefWidth="100.0">
+         <children>
+            <Label text="%dialog.viewBook.descriptionLb">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <TextFlow prefWidth="200.0" textAlignment="JUSTIFY">
+               <children>
+                  <Text fx:id="description" strokeType="OUTSIDE" strokeWidth="0.0" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&quot;" />
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="100.0" right="100.0" top="20.0" />
+               </padding>
+            </TextFlow>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" prefWidth="300.0">
+         <children>
+            <VBox alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" prefWidth="300.0" HBox.hgrow="SOMETIMES">
+               <children>
+                  <Label text="%dialog.viewBook.addDate">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label fx:id="addDate" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" prefWidth="300.0" HBox.hgrow="SOMETIMES">
+               <children>
+                  <Label text="%dialog.viewBook.publicationDateLb">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label fx:id="publicationDate" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" prefWidth="300.0" HBox.hgrow="SOMETIMES">
+               <children>
+                  <Label text="%dialog.viewBook.ISBNLb">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label fx:id="isbn" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <AnchorPane>
+         <children>
+            <Button fx:id="previousBt" layoutX="31.0" layoutY="13.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" text="%dialog.viewBook.previous" textAlignment="CENTER" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Button>
+            <Button fx:id="nextBt" layoutX="514.0" layoutY="13.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" text="%dialog.viewBook.nextBt" textAlignment="CENTER" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="50.0" />
+   </padding>
+</VBox>

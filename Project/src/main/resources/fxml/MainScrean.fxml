@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.2164090368608799" prefHeight="600.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.akjos.myLibrary.controller.MainController">
+   <items>
+      <VBox alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="160.0" spacing="10.0" SplitPane.resizableWithParent="false">
+         <children>
+            <Button mnemonicParsing="false" onAction="#addBtOnAction" prefHeight="100.0" prefWidth="100.0" text="%mainMenu.addBt">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#editBtOnAction" prefHeight="100.0" prefWidth="100.0" text="%mainMenu.editBt">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#deleteBtOnAction" prefHeight="100.0" prefWidth="100.0" text="%mainMenu.deleteBt">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#searchBtOnAction" prefHeight="100.0" prefWidth="100.0" text="%mainMenu.searchBt">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <TabPane fx:id="mainTabPane" tabClosingPolicy="UNAVAILABLE" SplitPane.resizableWithParent="false">
+         <tabs>
+            <Tab fx:id="booksC" text="%tabMenu.books">
+               <content>
+                  <fx:include fx:id="books" source="Books.fxml" />
+               </content>
+            </Tab>
+            <Tab fx:id="authorC" text="%tabMenu.authors">
+               <content>
+                  <fx:include fx:id="author" source="Author.fxml" />
+               </content>
+            </Tab>
+            <Tab fx:id="categoryC" text="%tabMenu.category">
+               <content>
+                  <fx:include fx:id="category" source="Category.fxml" />
+               </content>
+            </Tab>
+            <Tab fx:id="toReadC" text="%tabMenu.toRead">
+               <content>
+                  <fx:include fx:id="booksToRead" source="BooksToRead.fxml" />
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </items>
+</SplitPane>
